@@ -67,7 +67,7 @@ eureka:
 
 randolph:
   app:
-    jwtSecret: H4vS8DzZQkGq3F4uLPvG2Bwv3f9gPbXo3XrQZMs5j3U
+    jwtSecret: 
     jwtExpirationMs: 3600000
 
 logging:
