@@ -1,0 +1,7 @@
+.SessionView{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 4rem
+}

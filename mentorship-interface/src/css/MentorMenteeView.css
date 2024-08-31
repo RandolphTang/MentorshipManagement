@@ -1,0 +1,52 @@
+.mmv-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f8f9fa;
+}
+
+.mmv-header {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: 0 0 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.mmv-welcome {
+    margin: 0;
+    font-size: 1.8em;
+    color: #343a40;
+    font-weight: 600;
+}
+
+.mmv-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.mmv-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .mmv-header {
+        padding: 15px 20px;
+    }
+
+    .mmv-welcome {
+        font-size: 1.5em;
+    }
+
+    .mmv-content {
+        padding: 20px;
+    }
+}

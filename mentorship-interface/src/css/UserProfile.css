@@ -1,0 +1,516 @@
+.up-profile-container {
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    padding: 2rem;
+}
+
+.up-profile-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.up-profile-basic-info, .up-profile-details{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.up-profile-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+}
+
+.up-profile-stat-age, .up-profile-stat-security {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.up-profile-stat-age {
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.up-profile-stat-age h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+.up-profile-stat-age svg {
+    font-size: 1.5rem;
+    color: #0071e3;
+}
+
+.up-profile-stat-security {
+    align-items: stretch;
+}
+
+.up-stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.up-stat-item:last-child {
+    border-bottom: none;
+}
+
+.up-stat-item span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.up-save-button {
+    background: none;
+    border: none;
+    color: #0071e3;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.up-save-button:hover {
+    color: #005bbf;
+    transform: scale(1.1);
+}
+
+.up-profile-basic-info {
+    flex: 1;
+    width: 50em;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.up-profile-basic-info > * {
+    margin: 0;
+    padding: 0;
+}
+
+.up-profile-picture-container {
+    width: 20em;
+    height: 20em;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.up-profile-picture, .up-profile-picture-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+
+.up-profile-picture-overlay span {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.up-profile-picture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.up-profile-picture-container:hover .up-profile-picture-overlay {
+    opacity: 1;
+}
+
+.up-profile-icon {
+    font-size: 80px;
+    color: #999;
+}
+
+.up-profile-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 0.5rem 0;
+}
+
+.up-profile-email {
+    font-size: 1rem;
+    color: #86868b;
+    margin-bottom: 1rem;
+}
+
+.up-profile-role {
+    align-content: center;
+}
+
+.up-role-dropdown {
+    justify-content: center;
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #d1d1d6;
+    border-radius: 8px;
+    color: #1d1d1f;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+
+.up-role-dropdown:focus {
+    outline: none;
+    border-color: #0071e3;
+    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.1);
+}
+
+.up-role-dropdown:hover {
+    background-color: #f5f5f7;
+}
+
+
+.up-profile-details {
+    flex: 2;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.up-profile-widget {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.up-profile-widget:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.up-profile-widget h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 0.5rem;
+}
+
+.up-profile-widget p {
+    color: #86868b;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.up-edit-button {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.up-edit-button:hover {
+    background-color: #0077ed;
+}
+
+.up-action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.005);
+    padding: 2rem;
+    transition: all 0.3s ease;
+
+}
+
+.up-logout-button, .up-delete-account-button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.up-logout-button {
+    background-color: #34c759;
+    color: white;
+}
+
+.up-logout-button:hover {
+    background-color: #2db84c;
+}
+
+.up-delete-account-button {
+    background-color: #ff3b30;
+    color: white;
+}
+
+.up-delete-account-button:hover {
+    background-color: #ff1a0c;
+}
+.up-profile-field {
+    margin-bottom: 1.5rem;
+}
+
+.up-field-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.up-field-header h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 0;
+}
+
+.up-edit-button, .up-save-button {
+    background: none;
+    border: none;
+    color: #0071e3;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.up-edit-button:hover, .up-save-button:hover {
+    color: #0077ed;
+    transform: scale(1.1);
+}
+
+.up-field-content {
+    color: #86868b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.up-field-edit {
+    display: flex;
+    align-items: center;
+}
+
+.up-field-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #d2d2d7;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #1d1d1f;
+    margin-right: 0.5rem;
+}
+
+.up-field-input:focus {
+    outline: none;
+    border-color: #0071e3;
+    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.1);
+}
+
+.up-profile-stat {
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.up-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.up-modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.up-modal-content h2 {
+    margin-bottom: 1rem;
+    color: #1d1d1f;
+}
+
+.up-modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.up-modal-content input {
+    padding: 0.5rem;
+    border: 1px solid #d1d1d6;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.up-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.up-modal-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.up-modal-buttons button[type="submit"] {
+    background-color: #0071e3;
+    color: white;
+}
+
+.up-modal-buttons button[type="submit"]:hover {
+    background-color: #0077ed;
+}
+
+.up-modal-buttons button[type="button"] {
+    background-color: #e0e0e0;
+    color: #1d1d1f;
+}
+
+.up-modal-buttons button[type="button"]:hover {
+    background-color: #d1d1d1;
+}
+
+
+@media (max-width: 1200px) {
+    .up-profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .up-profile-basic-info,
+    .up-profile-details {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .up-profile-container {
+        padding: 0.5rem;
+    }
+
+    .up-profile-content {
+        gap: 1rem;
+    }
+
+    .up-profile-basic-info, .up-profile-details {
+        padding: 1rem;
+    }
+
+    .up-profile-picture-container {
+        max-width: 150px;
+    }
+
+    .up-profile-name {
+        font-size: 1.5rem;
+    }
+
+    .up-profile-widget h3 {
+        font-size: 1rem;
+    }
+
+    .up-action-buttons {
+        flex-direction: column;
+    }
+
+    .up-logout-button, .up-delete-account-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .up-profile-picture-container {
+        max-width: 120px;
+    }
+
+    .up-profile-name {
+        font-size: 1.3rem;
+    }
+
+    .up-profile-email {
+        font-size: 0.8rem;
+    }
+
+    .up-profile-widget h3 {
+        font-size: 0.9rem;
+    }
+
+    .up-profile-widget p {
+        font-size: 0.8rem;
+    }
+}

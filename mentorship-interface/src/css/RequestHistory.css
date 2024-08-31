@@ -1,0 +1,121 @@
+.request-history {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.request-history__title {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.request-history__title:hover {
+    color: #4CAF50;
+}
+
+.request-history__filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.request-history__filter-select,
+.request-history__sort-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.request-history__filter-select:focus,
+.request-history__sort-select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.request-history__list {
+    display: grid;
+    gap: 15px;
+}
+
+.request-history__item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.request-history__item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.request-history__item p {
+    margin: 5px 0;
+}
+
+.request-history__item strong {
+    color: #555;
+}
+
+.request-history__item--pending {
+    border-left: 5px solid #ffd700;
+}
+
+.request-history__item--accepted,
+.request-history__item--active {
+    border-left: 5px solid #4CAF50;
+}
+
+.request-history__item--declined,
+.request-history__item--cancelled {
+    border-left: 5px solid #f44336;
+}
+
+.request-history__actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.request-history__accept-btn,
+.request-history__decline-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.request-history__accept-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.request-history__decline-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.request-history__accept-btn:hover,
+.request-history__decline-btn:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.request-history__accept-btn:active,
+.request-history__decline-btn:active {
+    transform: translateY(0);
+}

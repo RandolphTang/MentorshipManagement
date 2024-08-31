@@ -1,0 +1,108 @@
+
+
+.add-event-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.session-form {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.multipleS {
+    background-color: #28a745;
+    width: 100vw;
+}
+
+.session-maker select {
+    width: 100vw;
+    height: 100000px;
+}
+
+.session-form.open {
+    max-height: 500px; /* Adjust this value based on your form's height */
+    transition: max-height 0.5s ease-in;
+}
+
+.session-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 0 0 5px 5px;
+}
+
+.session-form input,
+.session-form textarea {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+}
+
+.session-form button[type="submit"] {
+    padding: 10px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.multipleS {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.multipleS option {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.multipleS option:last-child {
+    border-bottom: none;
+}
+
+.multipleS option:hover {
+    background-color: #f0f0f0;
+}
+
+.multipleS option:checked {
+    background-color: #e0e0e0;
+    color: #000;
+    font-weight: bold;
+}
+
+/* For Webkit browsers like Chrome/Safari */
+.multipleS::-webkit-scrollbar {
+    width: 10px;
+}
+
+.multipleS::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.multipleS::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.multipleS::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+

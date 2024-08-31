@@ -1,0 +1,193 @@
+.us-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.us-modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: 0.3s fadeIn;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn2 {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.us-search-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.us-search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.us-search-input {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.us-search-input:focus {
+    border-color: #007bff;
+}
+
+.us-user-basicInfo-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.us-search-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.us-search-button:hover {
+    background-color: #0056b3;
+}
+
+.us-search-results {
+    max-height: 400px;
+    overflow-y: auto;
+    animation: ease-out;
+}
+
+.us-user-result {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.us-user-result:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.us-user-name {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.us-user-email {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.us-request-button {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.us-request-button svg {
+    width: 30px;
+    height: 30px;;
+    color: #28a745;
+    transition: 0.2s ease;
+}
+
+.us-request-button svg:hover {
+    color: #2e5939;
+}
+
+.us-request-form {
+    margin-top: 15px;
+    animation: 0.3s fadeIn2;
+}
+
+.us-request-form textarea {
+    width: 90%;
+}
+
+.us-request-message {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: vertical;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.us-request-message:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.us-error-message {
+    color: #dc3545;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.us-send-request-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.us-send-request-button:hover {
+    background-color: #0056b3;
+}
+
+.us-close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.us-close-button:hover {
+    background-color: #c82333;
+}
