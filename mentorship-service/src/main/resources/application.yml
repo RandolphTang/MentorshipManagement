@@ -5,8 +5,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
-    username: "randolph"
-    password: "031125"
+    username: 
+    password: 
     driver-class-name: org.postgresql.Driver
 
 
@@ -38,9 +38,9 @@ logging:
 
 google:
   client:
-    id: '33816139572-mbo72lp4psjooejbpi6fe2153oi6lb5m.apps.googleusercontent.com'
-    secret: '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'
-  application-name: 'mentorship'
+    id: 
+    secret: 
+  application-name: 
   credentials-file-path: 'googleServiceKey.json'
 
 
