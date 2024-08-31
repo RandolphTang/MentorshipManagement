@@ -5,8 +5,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
-    username: "randolph"
-    password: "031125"
+    username: 
+    password: 
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -30,11 +30,11 @@ spring:
       credentials:
         location: classpath:gcs-key.json
       storage:
-        bucket: profilepic4mentorship
+        bucket: 
 
 randolph:
   app:
-    jwtSecret: H4vS8DzZQkGq3F4uLPvG2Bwv3f9gPbXo3XrQZMs5j3U
+    jwtSecret:
     jwtExpirationMs: 600000
 
 server:
