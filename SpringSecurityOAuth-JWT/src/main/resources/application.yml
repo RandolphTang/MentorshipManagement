@@ -1,0 +1,70 @@
+spring:
+  application:
+    name: authentication-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: "randolph"
+    password: "031125"
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+      database: postgresql
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            redirect-uri: "http://localhost:8084/login/oauth2/code/google"
+            client-id: "33816139572-mbo72lp4psjooejbpi6fe2153oi6lb5m.apps.googleusercontent.com"
+            client-secret:  "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"
+
+          github:
+            redirect-uri: "http://localhost:8084/login/oauth2/code/github"
+            client-id: "Ov23li1TNBO9UWxZRwr3"
+            client-secret: "e7409bd85bb79cebb0015ee1644a3e6dd5666300"
+
+frontend:
+  url: http://localhost:3000
+
+randolph:
+  app:
+    jwtSecret: H4vS8DzZQkGq3F4uLPvG2Bwv3f9gPbXo3XrQZMs5j3U
+    jwtExpirationMs: 960000
+
+server:
+  port: 8080
+
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.security.oauth2: TRACE
+
+eureka:
+  instance:
+    hostname: localhost
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+

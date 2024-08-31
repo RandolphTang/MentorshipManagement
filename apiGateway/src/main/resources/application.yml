@@ -1,0 +1,78 @@
+server:
+  port: 8084
+
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: authentication-service
+          uri: lb://AUTHENTICATION-SERVICE
+          predicates:
+            - Path=/auth/**, /oauth2/**, /login/**
+#          filters:
+#            - name: RequestRateLimiter
+#              args:
+#                redis-rate-limiter.replenishRate: 10
+#                redis-rate-limiter.burstCapacity: 20
+#            - name: CircuitBreaker
+#              args:
+#                name: authenticationCircuitBreaker
+#                fallbackUri: forward:/authenticationFallback
+        - id: profile-service
+          uri: lb://PROFILE-SERVICE
+          predicates:
+            - Path=/profiles/**
+#          filters:
+#            - name: RequestRateLimiter
+#              args:
+#                redis-rate-limiter.replenishRate: 10
+#                redis-rate-limiter.burstCapacity: 20
+#            - name: CircuitBreaker
+#              args:
+#                name: profilesCircuitBreaker
+#                fallbackUri: forward:/profileFallback
+        - id: mentorship-service
+          uri: lb://MENTORSHIP-SERVICE
+          predicates:
+            - Path=/mentorship/**
+#          filters:
+#            - name: RequestRateLimiter
+#              args:
+#                redis-rate-limiter.replenishRate: 10
+#                redis-rate-limiter.burstCapacity: 20
+#            - name: CircuitBreaker
+#              args:
+#                name: mentorshipCircuitBreaker
+#                fallbackUri: forward:/mentorshipFallback
+
+      httpclient:
+          connect-timeout: 1000
+          response-timeout: 5s
+
+
+eureka:
+  instance:
+    hostname: localhost
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+randolph:
+  app:
+    jwtSecret: H4vS8DzZQkGq3F4uLPvG2Bwv3f9gPbXo3XrQZMs5j3U
+    jwtExpirationMs: 3600000
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.cloud.gateway: DEBUG

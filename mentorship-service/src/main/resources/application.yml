@@ -1,0 +1,55 @@
+spring:
+  application:
+    name: mentorship-service
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: "randolph"
+    password: "031125"
+    driver-class-name: org.postgresql.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+      database: postgresql
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+
+server:
+  port: 8083
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
+google:
+  client:
+    id: '33816139572-mbo72lp4psjooejbpi6fe2153oi6lb5m.apps.googleusercontent.com'
+    secret: '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'
+  application-name: 'mentorship'
+  credentials-file-path: 'googleServiceKey.json'
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+randolph:
+  app:
+    jwtSecret: H4vS8DzZQkGq3F4uLPvG2Bwv3f9gPbXo3XrQZMs5j3U
+    jwtExpirationMs: 960000

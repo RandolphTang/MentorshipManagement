@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mentorship-431823",
+  "private_key_id": "9223f50b5731fa536c3eb5254c24a7a560883630",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCX0FMrkKQ+xH+G\npx+cZ9zl2ol2bESyxOqIXt33LM2zk6ge0WLWviiTo3N70V8bh5AnsWtEnR9Qikau\nM2rgDw6WTvJp57omD3Ih2nJLYAMQ6UaOAQj0z3qh2as0glzxC7aFRQ5ywjAqm2a7\nIOL6wEIgWgOkuuhcPNkgsw3OKzG4EUYNt2Gh9q/2gSLeas5gxWOFAXvljG7KbieF\nMbXlSglC5jthO3Fw+OZ0Iv0+W/tDmMpiN1vpQSNFxe3ei/AL4YUsA76Rgagf65ig\nFoOQPYwAP/UNniZ75ZoNa89EjGvgM4pDE2uw+yNfTEl+eOYP5BEF869pIoaSRZNp\ngRqWupSFAgMBAAECggEAPjmHPX4FtCx6UMjDbiosIpJWcZGi/tszfj3UIPHeRlKp\nQCh2qKo8m3cNaJzCrNf9wCc6Xl9AbJSgr9onXjsNsZIeTkZKyDrgfvu4iSiLWS0k\nXCQUdbNtAlXjlJwyWCKC51EMwQDTGUOk8eJi5oBTGkuK3sQ1ZUkTfhGmAPE3acgY\nn+2HpdUF7Mr4T+Szxnaxmq5d8HECvBD9l9r8Y7hwiOMBonBvZJmhyvRjkdCiigQk\nCPdMBN4TVwHuUvrUcHDE5OmQB5bWyvo/4d5D3rxRR6n0rGhTCkW91KiS8S6HOBhT\njOdrTd6BEBVMHyTFu7gO4IlF7HQsVCgtifkbl2giaQKBgQDVVIHMBafOnd4s0nz6\npbJZt8wpGXc2lApkTT7ql3Plc0QRUroLZ+zQs/6forvO6eO3YvV7c0AFHMWCYlYg\nAxiy7Us9VuePFWcAn5ofdrIQUasxueP4Ppa4946d7y6BhDao/CU3+wU+7Gv6rlSd\nHJL05uBGOFV0h5wIO8HJiGenRwKBgQC2LeU/uwbt/CqG73ZSVngdZtDyDtyF1ctX\nBhS4JEIE66z3cASJHZqE+zo98lk1Q7SFXi81EYRiezdNE0Czn0rz7YAFGMLwyYzb\nlsGtkWnvzEjSvlKN+V6VgdZVs/f1KR63LhXnHSe+1kXNbU4dOKQ1GphfKt9Spzgs\n55R0N6sj0wKBgFpRzB54KoLk/eLWP0nTi35Gve6MtJdr+DZdKg0ikFQOCDyZXOFl\nX7NA8cXenUtOZTYIdMyOkAVaGBlKzxIAnZ1rsBZJTAKdWh2+dP9rPpqAKU4FWQqK\nXT/0t/IQCQ2Wz5meH5fi9GaerFzXIEXgiiub8EpqoWuT2rD1s+dClDgTAoGALhvB\nmPayE0uuS8aRsNc3wWFDYvBF+g2ZUGY2mkB7ARnRBjMwwq9ea2fWXtVWpLeFGfgz\nhH/xfKdo4LYNuyiG5OPoceHJfP3WC8HFNTPHlyyiBcyrwkkqGjbpU3mgOUl1/7DH\nVF45sAA1XH/ctGKglNwtUnDcYuP1wM+/8AYi54cCgYAxguJmbT6teqVKmnURhIGB\nWg9PeYhVGLqG+0e/5/F/2JK3RmoO/rBc8rPXorRwYD9hm/ZgjpRI/Va10ui/SpSQ\n/RrwGeDgEuLjxCKhoPzZBlR/AUo6eWtTuZa+iF5vH+kDQehd0zOimOIpsyw8ytgq\nGcRwTZJOf9jDujb59Ku56g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dubmentorship@mentorship-431823.iam.gserviceaccount.com",
+  "client_id": "101800618317415666682",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dubmentorship%40mentorship-431823.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
