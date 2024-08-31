@@ -4,8 +4,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
-    username: "randolph"
-    password: "031125"
+    username: 
+    password: 
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -29,21 +29,21 @@ spring:
       client:
         registration:
           google:
-            redirect-uri: "http://localhost:8084/login/oauth2/code/google"
-            client-id: "33816139572-mbo72lp4psjooejbpi6fe2153oi6lb5m.apps.googleusercontent.com"
-            client-secret:  "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"
+            redirect-uri: 
+            client-id: 
+            client-secret: 
 
           github:
-            redirect-uri: "http://localhost:8084/login/oauth2/code/github"
-            client-id: "Ov23li1TNBO9UWxZRwr3"
-            client-secret: "e7409bd85bb79cebb0015ee1644a3e6dd5666300"
+            redirect-uri:
+            client-id: 
+            client-secret:
 
 frontend:
   url: http://localhost:3000
 
 randolph:
   app:
-    jwtSecret: H4vS8DzZQkGq3F4uLPvG2Bwv3f9gPbXo3XrQZMs5j3U
+    jwtSecret:
     jwtExpirationMs: 960000
 
 server:
